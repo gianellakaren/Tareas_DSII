@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class Conexion {
 	private static final String CONTROLADOR = "com.mysql.jdbc.Driver";
-	private static final String URL = "jdbc:mysql://localhost:3306/productos";
+	private static final String URL = "jdbc:mysql://localhost:3306/tareads";
 	private static final String USER = "root";
 	private static final String PWD = "";
 	

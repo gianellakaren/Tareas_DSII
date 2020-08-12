@@ -1,8 +1,11 @@
+import javax.swing.JOptionPane;
+
 public class Producto {
 	private String CodProd;
 	private String NomProd;
 	private String DetaProd;
-	private char StocProd;
+	private String CatProd;
+	private int StocProd;
 	private float PrecProd;
 	public String getCodProd() {
 		return CodProd;
@@ -22,17 +25,24 @@ public class Producto {
 	public void setDetaProd(String detaProd) {
 		DetaProd = detaProd;
 	}
-	public char getStocProd() {
+	
+	public String getCatProd() {
+		return CatProd;
+	}
+	public void setCatProd(String catProd) {
+		CatProd = catProd;
+	}
+	public int getStocProd() {
 		return StocProd;
 	}
-	public void setStocProd(char stocProd) {
-		StocProd = stocProd;
+	public void setStocProd(String stocProd) {
+		StocProd = Integer.parseInt(stocProd);
 	}
 	public float getPrecProd() {
 		return PrecProd;
 	}
-	public void setPrecProd(float precProd) {
-		PrecProd = precProd;
+	public void setPrecProd(String precProd) {
+		PrecProd = Float.parseFloat(precProd);
 	}
 	
 	
